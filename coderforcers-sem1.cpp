@@ -26,8 +26,8 @@ int cambioDeCartas(int &n, int &k, vector<int> &cartas)
         frecuencia[cartas[i]]++;
     }
 
-    for (int i = 0; i < 101; i++)      // De ser necesario, se podría hacer una
-    {                                  // busqueda binaría.
+    for (int i = 0; i < 101; i++)      
+    {                                  
         if ( frecuencia[i] >= k)
         {
             return k-1;
