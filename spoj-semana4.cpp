@@ -13,9 +13,9 @@ typedef vector<unsigned long> VectorUL;
 // Definición de un alias para vector<vector<unsigned long>>
 typedef vector<vector<unsigned long>> MatrizUL;
 
-// Función para calcular la potencia de 2 que sea cota mínima de un número n
+////////////////////////////// Calcular la potencia de 2 que sea cota minima de u nnumero n /////////////////////////////////
 int proxPot2(int numero) {
-    int pos = int(log2(numero)) + 1;
+    int pos = int(ceil(log2(numero)));
     return 1 << pos;
 }
 
